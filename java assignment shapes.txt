@@ -1,0 +1,62 @@
+class ShapeClass{
+    private double area;
+    private String name;
+    private int sides;
+
+    public void setArea(double area){
+        this.area = area;}
+    public double getArea(){return area;
+    }
+    public void setName(String name){
+        this.name = name;}
+    public String getName(){return name;
+    }
+    public void setSides(int sides){
+        this.sides = sides;}
+    public int getSides(){return sides;
+    }
+}
+class triangle extends ShapeClass{
+    public double base;
+    public double height;
+    public void calculateArea1(){
+    }
+    public void setBase(double base){
+        this.base = base;}
+    public double getBase(){return base;
+    }
+    public void setHeight(double height){
+        this.height = height;}
+    public double getHeight(){return height;
+    }
+}
+class rectangle extends ShapeClass{
+    public double length;
+    public double width;
+    public void calculateArea2(){
+    }
+    public void setLength(double length){
+        this.length = length;}
+    public double getLength(){return length;
+    }
+    public void setWidth(double width){
+        this.width = width;}
+    public double getWidth(){return width;
+    }
+}
+class ShapeDemo {
+    public static void main(String[] args) {
+        final double multiplier = 0.5;
+        double calculateArea1;
+        double calculateArea2;
+
+        double getCalculateArea1;{
+            calculateArea1 = (12 * multiplier);
+        }
+        double getCalculatedArea2;{
+            calculateArea2 = (53495.3954568*498223);
+        System.out.println("The area of the Triangle is " + calculateArea1);
+            System.out.println("The area of the Rectangle is "+ calculateArea2);
+        }
+    }
+}

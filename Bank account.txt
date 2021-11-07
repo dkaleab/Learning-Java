@@ -1,0 +1,62 @@
+Bank Account
+public class BankAccount {
+    private int _accountID;
+    private String _name;
+    private double _balance;
+
+    public void deposit(double amount){
+        _balance += amount;
+    }
+
+    public void setAccountID(int id) {
+        _accountID = id;
+    }
+
+    public void setName(String name){
+        _name = name;
+    }
+    public void setBalance(double balance) {
+        _balance = balance;
+    }
+
+    public int getID() {
+        return _accountID;
+    }
+    public String getName() {
+        return _name;
+    }
+    public double getBalance() {
+        return _balance;
+    }
+
+}
+
+public class CheckingAccount extends BankAccount {
+
+    public double withdraw(double amount){
+        this.setBalance(this.getBalance() - amount);
+        return amount;
+    }
+}
+Travis B — 06/01/2021
+instead of goodle meet
+Devonne — 06/01/2021
+Pin: 159633811
+Fluke — 06/01/2021
+public class SavingsAccount extends BankAccount {
+    private double _interest;
+
+    public double getInterest() { return _interest; }
+    public void setInterest(double i) { _interest = i; }
+    public double calcluateInterest(){
+        return _interest;
+    }
+}
+public class Main {
+
+    public static void main(String[] args) {
+        SavingsAccount s = new SavingsAccount();
+        CheckingAccount c = new CheckingAccount();
+
+    }
+}

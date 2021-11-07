@@ -1,0 +1,32 @@
+class Book{
+    public Book(String Title, String Author, double Price)
+    {
+        title = Title;
+        author = Author;
+        price = Price;
+    }
+
+    String title;
+    String author;
+    double price;
+
+    public void setTitle(String t) {
+        title = t;
+    }
+    public void setAuthor(String a) { author=a; }
+    public void setPrice(double p) { price=p; }
+
+    public String getTitle() { return title; }
+    public String getAuthor() { return author; }
+    public double getPrice() { return price; }
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+        Book myBook = new Book("Developing Java Software", "Russel Winderand", 79.75);
+        System.out.println( myBook.getTitle());
+        System.out.println(myBook.getAuthor());
+        System.out.println( myBook.getPrice());
+    }
+}

@@ -1,0 +1,38 @@
+//import java.util.LinkedList;
+import java.util.Iterator;
+import java.util.Scanner;
+import java.util.ArrayList;
+
+public class LinkedList {
+    public static void main(String[] args){
+        System.out.println("Here are a list of some coding skills:");
+
+        ArrayList<String> skillSet = new ArrayList<>();
+        skillSet.add("Java");
+        skillSet.add("Python");
+        skillSet.add("Scala");
+        skillSet.add("Swift");
+        System.out.println(skillSet);
+        skillSet.add(2,"Javascript");
+        skillSet.add(3,"Kotlin");
+        System.out.println("2 new skills are "+skillSet);
+        skillSet.add(0,"First Course");
+        skillSet.add("Last Course");
+        System.out.println("New List: "+skillSet);
+        skillSet.remove(0);
+        skillSet.add(0,"Java9");
+        System.out.println("Updated list "+skillSet);
+        skillSet.remove("Java");
+        skillSet.remove("Javascript");
+        System.out.println("Recent update of list "+skillSet);
+        skillSet.remove("Java9");
+        skillSet.remove("Last Course");
+        System.out.println("Final List "+skillSet);
+        Iterator it = skillSet.iterator();
+        while (it.hasNext()){
+            Object skills = it.next();
+            System.out.println(skills + "");
+        }
+        System.out.println();
+    }
+}

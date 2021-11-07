@@ -1,0 +1,81 @@
+public class Shape {
+    private String _color;
+
+    // must be overridden
+    public double getArea() {
+        return 0;
+    }
+
+    public String toString() {
+        return "";
+    }
+    public String getColor() { return _color; }
+
+    public void setColor(String color) { _color = color; }
+}
+public class Triangle extends Shape {
+    private double _base;
+    private double _height;
+
+    public Triangle() {}
+    public Triangle( double base, double height) {
+        _base = base;
+        _height = height;
+    }
+
+    public double getArea() {
+        return 0.5_base_height;
+    }
+
+    public String toString() {
+        return "";
+    }
+
+    public double getBase() { return _base; }
+    public double getHeight() { return _height; }
+
+    public void setBase(double base) { _base = base; }
+    public void setHeight(double height) { _height = height;}
+}
+public class Rectangle {
+    private double _length;
+    private double _width;
+
+    public Rectangle() {}
+    public Rectangle(double length, double width) {
+        _length = length;
+        _width = width;
+    }
+
+    public double getArea() {
+        return _length*_width;
+    }
+
+    public String toString() {
+        return "";
+    }
+
+
+    public double getLength() { return _length; }
+    public double getWidth() { return _width; }
+
+    public void setLength(double length) { _length = length; }
+    public void setWidth(double width) { _width = width; }
+
+
+}
+public class Main {
+
+    public static void main(String[] args) {
+
+        Rectangle rect = new Rectangle(44.5, 33.0);
+        Triangle tri = new Triangle(55.4, 44.3);
+
+        double rectarea = rect.getArea();
+        double triarea = tri.getArea();
+
+        System.out.println("rect area: " + rectarea);
+        System.out.println("tri area: " + triarea);
+    // write your code here
+    }
+}

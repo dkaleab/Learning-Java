@@ -1,0 +1,26 @@
+Java Addition
+
+package com.danielcode;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner add = new Scanner(System.in);
+        System.out.println("Enter first number");
+        int a = add.nextInt();
+
+        System.out.println("Enter the second number");
+        int b = add.nextInt();
+
+        System.out.println(a + b);
+  	System.out.println(a*b);
+        System.out.println(a-b);
+        System.out.println(a/b);
+        
+
+
+    }
+}

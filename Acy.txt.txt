@@ -1,0 +1,20 @@
+import java.util.ArrayList;
+
+public class AcyCard {
+    public static void main(String[] args) {
+        ArrayList <String > Acy =new ArrayList();
+        Acy.add("Ace of Clubs");
+        Acy.add("Ace of Hearts");
+        Acy.add("Ace of Diamonds");
+        Acy.add("Ace of Spades");
+        System.out.println(Acy);
+        Acy.add(0, "Jack of Clubs");
+        System.out.println(Acy);
+        System.out.println(Acy.get(3));
+        Acy.add(2,"Ten of Hearts");
+        System.out.println(Acy);
+        Acy.remove(3);
+        System.out.println(Acy);
+
+    }
+}

@@ -1,0 +1,12 @@
+/* Lab 2.4-Complete the following task
+   Write a Java program to calculate the average 
+value of array of 10 int elements.
+
+*/
+import java.util.Arrays; 
+public class Arraylab {public static void main(String[] args){
+       //Declare an array    
+ //Constructing an Array  
+  //Initializing an Array  
+ // calculate the average 
+   }}

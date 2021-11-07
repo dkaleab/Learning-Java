@@ -1,0 +1,55 @@
+class Shape{
+    private String color;
+    double area;
+
+    public Shape(){
+        setColor(null);
+    } // constructor
+    public void setColor(String color){
+    this.color = color;
+    }
+
+    public String getColor() {
+        return color;
+    }
+    public void setArea(double area) {
+        this.area = area;
+    }
+    public double getArea(){
+        return area;
+    }
+        }
+
+class Triangle extends Shape{
+
+    public void setArea(double base, double height){
+        area =  base * height;
+    }
+
+}
+class Rectangle extends Shape{
+
+    public void setArea(double length, double width){
+        area = length * width;
+    }
+}
+
+public class ShapeDemo {
+    public static void main(String[] args) {
+
+    Triangle triangle = new Triangle();
+    triangle.setColor("Blue");
+    System.out.println("**Triangle**");
+    System.out.println("\tColor: " + triangle.getColor());
+    triangle.setArea(9.10,2.2);
+    System.out.println("\tArea: " + triangle.getArea());
+
+    System.out.println();
+    Rectangle rectangle = new Rectangle();
+    System.out.println("**Rectangle**");
+    rectangle.setColor("Green");
+    System.out.println("\tColor: " + rectangle.getColor());
+    rectangle.setArea(10.3, 2.0);
+    System.out.println("\tArea: " + rectangle.getArea());
+    }
+}

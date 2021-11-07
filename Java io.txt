@@ -1,0 +1,26 @@
+import java.io.FileWriter;
+
+public class JavaWriteExample {
+
+    public static void main(String[] args) {
+
+        String filename = "C:/Users/beckt/Documents/fileWriting.txt";
+        String data = "This is the data in the output file";
+        try {
+            //creates a writer using filewriter
+            FileWriter output = new FileWriter(filename);
+
+            //write () method writes string to file
+            output.write(data);
+            System.out.println("Data is written to the file");
+
+            String str = ("this is added after the file is created");
+
+            // closes the writer
+            output.close();
+        }
+        catch (Exception e){
+            e.getStackTrace();
+        }
+    }
+}
